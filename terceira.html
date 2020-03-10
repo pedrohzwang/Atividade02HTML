@@ -46,8 +46,19 @@
             </div>
             
             <div>
+                <label>Nível de escolaridade</label>
+                <br>
+                <label for="fundamentalCompleto">Ensino fundamental completo</label>
+                <input type="checkbox" name="escolaridade1" id="escolaridade1" value="Fundamental completo" required>
+            </div>
+            
+            <br>
+            <hr>
+            <br>
+            
+            <div>
                 <label for="hobbies">Hobbies</label>
-                <textarea name="hobbies" id="hobbies" placeholder="Nos informe quais são os seus hobbies atualmente." required></textarea>
+                <textarea name="hobbies" id="hobbies" placeholder="Nos informe quais são os seus hobbies atualmente." rows="2" cols="50" required></textarea>
             </div>
             
             <div>
@@ -73,6 +84,12 @@
                 <label for="amigosHobby">Quantos de seus amigos tem os mesmos hobbies que você </label>
                 <input type="number" name="amigosHobby" id="amigosHobby" value="1" min="0" max="20" required>
             </div>
+            
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required autofocus>
+            </div>
+            
         </form>
     </div>
 </body>
