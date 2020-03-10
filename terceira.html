@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -18,15 +19,59 @@
         <form action="#" method="GET">
             <div>
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required autofocus>
             </div>
+            
+            <div>
+                <label>Sexo</label>
+                <br>
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">Feminino</label>
+                
+                <input type="radio" name="sexo" id="masculino">
+                <label for="masculino">Masculino</label>
+                
+                <input type="radio" name="sexo" id="outro">
+                <label for="outro">Outro</label>
+            </div>
+            
             <div>
                 <label for="dataNascimento">Data de Nascimento</label>
-                <input type="text" name="dataNascimento" id="dataNascimento">
+                <input type="text" name="dataNascimento" id="dataNascimento" required>
             </div>
+            
             <div>
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+            </div>
+            
+            <div>
+                <label for="hobbies">Hobbies</label>
+                <textarea name="hobbies" id="hobbies" placeholder="Nos informe quais são os seus hobbies atualmente." required></textarea>
+            </div>
+            
+            <div>
+                <label for="frequencia">Frequência em que você pratica seus hobbies por semana</label>
+                <br>
+                <input id="frequencia" name="frequencia" type="range" min="1" max="7" value="3">
+                <span></span>
+            </div>
+            
+            <div>
+                <label for="horas">Frequência em horas por dia em que você pratica seus hobbies</label>
+                <br>
+                <select name="horas" id="horas" required>
+                    <option value="0">Menos de uma hora</option>
+                    <option value="1">1 hora</option>
+                    <option value="2">2 horas</option>
+                    <option value="3">3 horas</option>
+                    <option value="4">Mais de 3 horas</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="amigosHobby">Quantos de seus amigos tem os mesmos hobbies que você </label>
+                <input type="number" name="amigosHobby" id="amigosHobby" value="1" min="0" max="20" required>
             </div>
         </form>
     </div>
