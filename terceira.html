@@ -16,7 +16,7 @@
     <h1 class="center">Formulário de Registro de Usuário</h1>
 
     <div id="container">
-        <form action="#" method="GET">
+        <form action="#" method="GET" id="form">
             <div>
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" placeholder="Nome Completo" required autofocus pattern="[A-Za-z]">
@@ -71,14 +71,14 @@
             </div>
             
             <div>
-                <label for="frequencia">Frequência em que você pratica seus hobbies por semana</label>
+                <label for="frequencia">Frequência em que você se dedica a seus hobbies por semana</label>
                 <br>
                 <input id="frequencia" name="frequencia" type="range" min="1" max="7" value="3">
                 <span></span>
             </div>
             
             <div>
-                <label for="horas">Frequência em horas por dia em que você pratica seus hobbies</label>
+                <label for="horas">Quantidade de horas por dia em que você se dedica a seus hobbies</label>
                 <br>
                 <select name="horas" id="horas" required>
                     <option value="0">Menos de uma hora</option>
@@ -95,12 +95,36 @@
             </div>
             
             <div>
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required autofocus>
+                <label for="color">Cor favorita</label>
+                <input name="cor" id="color" type="color">
+            </div>
+            
+            <div>
+                <label>Participe de encontros relacionados aos seus hobbies em </label>
+                <input name="dataEncontro" id="dataEncontro" type="month" min="2020-03" max="2021-01" value="2020-03">
+            </div>
+            
+            <br>
+            <hr>
+            <br>
+            
+            <div>
+                <label for="cargo">Cargo</label>
+                <input type="text" name="cargo" id="cargo" placeholder="Cargo" value="Usuário" disabled>
             </div>
             
         </form>
     </div>
+    <br>
+    <br>
+    <div>
+        <button type="submit">Enviar dados</button>
+    </div>
+    
+    <br>
+    <br>
+    
+    <video src="video/Novo%20meta%20do%20CSGO.mp4" id="video" name="video" controls ></video>
 </body>
 
 </html>

@@ -1,6 +1,10 @@
-var range = document.querySelector("#frequencia");
-var value = document.querySelector("span");
+var form = document.getElementById('form');
+var campoCor = document.getElementById('color');
 
-range.addEventListener("#frequencia", function(){
-    value.innerHTML = this.value;
-})
+form.addEventListener('submit', function(e) {
+    // alerta o valor do campo
+    alert(campoCor.value);
+
+    // impede o envio do form
+    e.preventDefault();
+});
