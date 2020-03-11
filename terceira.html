@@ -19,7 +19,7 @@
         <form action="#" method="GET">
             <div>
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required autofocus>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required autofocus pattern="[A-Za-z]">
             </div>
             
             <div>
@@ -42,14 +42,23 @@
             
             <div>
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <input type="email" name="email" id="email" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             </div>
             
             <div>
-                <label>Nível de escolaridade</label>
+                <label>Já cursou as áreas de</label>
                 <br>
-                <label for="fundamentalCompleto">Ensino fundamental completo</label>
-                <input type="checkbox" name="escolaridade1" id="escolaridade1" value="Fundamental completo" required>
+                <label for="info">Informática</label>
+                <input type="checkbox" name="area1" id="info" value="Informática">
+                <br>
+                <label for="adm">Administração</label>
+                <input type="checkbox" name="area2" id="adm" value="Administração">
+                <br>
+                <label for="gastro">Gastronomia</label>
+                <input type="checkbox" name="area3" id="gastro" value="Gastronomia">
+                <br>
+                <label for="auto">Automação</label>
+                <input type="checkbox" name="area4" id="auto" value="Automação">
             </div>
             
             <br>
