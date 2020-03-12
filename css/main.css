@@ -88,3 +88,13 @@ div.center a{
 div#container div{
     margin-top: 10px;
 }
+
+.submit{
+    border-radius: 10%;
+    color: red;
+    background-color: black;
+    border: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+        
+}
