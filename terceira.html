@@ -19,7 +19,7 @@
         <form action="#" method="GET" id="form">
             <div>
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required autofocus pattern="[A-Za-z]">
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" pattern="[A-Za-z\s]+$" required autofocus>
             </div>
             
             <div>
@@ -67,7 +67,7 @@
             
             <div>
                 <label for="hobbies">Hobbies</label>
-                <textarea name="hobbies" id="hobbies" placeholder="Nos informe quais são os seus hobbies atualmente." rows="2" cols="50" required></textarea>
+                <textarea name="hobbies" id="hobbies" placeholder="Nos informe quais são os seus hobbies atualmente." rows="2" cols="50" required pattern="[A-Za-z\s]+$"></textarea>
             </div>
             
             <div>
